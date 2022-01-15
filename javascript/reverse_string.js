@@ -1,6 +1,15 @@
 function reverseString(str) {
   // type your code here
+  //create var for empty string
+  var newStr = ""
+  //use for loop
+  for (var i=str.length -1; i>= 0; i--){
+    newStr += str[i];
+  }
+  //return reverse
+  return newStr;
 }
+reverseString("hello")
 
 if (require.main === module) {
   // add your own tests in here
